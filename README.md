@@ -12,3 +12,7 @@ Además, cuando el usuario interesado detecte un error en el análisis de un tex
 Durante el desarrollo del proyecto habrá una serie de entregables que constituirán la totalidad del proyecto presentado. El primero de ellos será el sistema inteligente con la funcionalidad principal de análisis de textos. Posteriormente se hará un segundo entregable donde se habrá añadido la funcionalidad de que el usuario pueda reportar errores en el análisis de los textos introducidos. Para finalizar se hará una última entrega donde el sistema contará con la opción de que el usuario añada textos junto a sus autores para el entrenamiento de la Inteligencia Artificial para enriquecer la base de datos. Además, se entregará una documentación del sistema y un manual del usuario.
 
 También se añadirá un informe con estadísticas de su funcionamiento desde las cuales se extraerán diferentes parámetros como el índice de aciertos y otra información estadística de su funcionamiento. 
+
+## Diagrama de flujo
+
+![alt_text](https://github.com/EstherJP/Author-recognizer/blob/main/flowchart.png)
