@@ -4,13 +4,14 @@ import string
 from basicFunctions import *
 from collections import Counter
 
+############ Ver si podemos generalizar la tokenizacion
 ################3 ¿Por que estan globales?
 stopWords = [] # Array que contendrá las palabras vacías del inglés
 quotes = ["’", '“', '”', "'", '"'] # Array que contiene las comillas de citas
 
 # Función que obtiene la frecuencia de la distribución según la longitud de las 
 # palabras por letra
-def lengthFreqDis(text): #################### FALTA PONER QUE NO SE TENGA EN CUENTA LAS PALABRAS CON UNA LONGITUD MAYOR A 15 ##############
+def lengthFreqDis(text):
   # Eliminamos los elementos de puntuación, los números y las comillas
   toRemove = string.punctuation
   toRemove += string.digits
@@ -23,9 +24,17 @@ def lengthFreqDis(text): #################### FALTA PONER QUE NO SE TENGA EN CUE
 
   # Calculamos la longitud de las palabras que se almacenará en un hash cuya clave
   # será la longitud y el valor el número de apariciones
+  numberOfTokens = len(tokens)
   tokensLengths = [len(token) for token in tokens]
   freqDist = nltk.FreqDist(tokensLengths)
-  return freqDist
+  filtFreqDist = {}
+  for key in freqDist:
+    if key < 15:
+      filtFreqDist[key] = round((freqDist[key] / numberOfTokens), 6)
+
+  filtFreqDist = sorted(filtFreqDist.items())
+  
+  return filtFreqDist
 
 # Función que obtiene la frecuencia media de los puntos y comas cada mil palabras
 def punctuationFreq(text):
@@ -59,7 +68,7 @@ def punctuationFreq(text):
   averageDot = dotAcc / numberOfPack
   # Devolvemos un array en donde en la primera posición se encuentra la frecuencia
   # de comas y en el segundo la frecuencia de puntos
-  return([averageComma, averageDot])
+  return([round(averageComma, 6), round(averageDot, 6)])
 
 # Función que obtiene el número medio de la longitud de frases del texto
 def sentenceLength(text):
@@ -76,22 +85,16 @@ def sentenceLength(text):
 
   # Contamos el número de palabras de cada oración 
   sentenceSizes = []
-  wordAcc = 0
+  numberOfSentences = 0
   totalLength = 0 
   for word in tokens:
     if word == dot:
-      sentenceSizes.append(wordAcc)
-      wordAcc = 0
+      numberOfSentences += 1
     else:
-      wordAcc += 1
-      totalLength +=1
+      totalLength += 1
       
-  ########## CREO QUE ESTE FOR NOS LO PODEMOS AHORRAR SUMANDO EL TOTAL LENGTH ARRIBA #############
-  # Calculamos el número total de palabras
-  for element in sentenceSizes:
-    totalLength += element
   # Devolvemos la media del tamaño de las oraciones del texto
-  return(totalLength / len(sentenceSizes))
+  return(round((totalLength / numberOfSentences), 6))
 
 # Función que obtiene las 50 palabras más frecuentes del texto
 def fiftyMostUsedWords(text):
