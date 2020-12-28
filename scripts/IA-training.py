@@ -12,7 +12,7 @@ import os
 
 # Recorremos nuestra base de datos y concatenamos los libros po autor
 separator = " "
-authors = glob("./books/*")
+authors = glob("./booksTrain/*")
 booksText = []
 for author in authors:
   books = glob(author + "/*.epub")
@@ -27,7 +27,6 @@ for author in authors:
 def dataToJSON():
   data = []
   i = 0
-
   # Creamos el hash con los datos para cada autor
   for authorCorpus in booksText:
     aux = {}
@@ -39,14 +38,17 @@ def dataToJSON():
     aux["frecuenciaPuntos"] = frequencies[1]
     aux["longitudSentenciaMedia"] = sentenceLength(authorCorpus)
     aux["cincuentaPalabrasFrecuentes"] = fiftyMostUsedWords(authorCorpus)
+    aux["palabrasRaras"] = rareWords(authorCorpus)
 
     data.append(aux)
     i += 1
 
-  json_file = json.dumps(data, indent = 2)
+  if os.path.exists("authors.json"):
+    os.remove("authors.json")
 
+  json_file = json.dumps(data, indent = 2)
   # Escribimos en el fichero
-  with open('info.json', 'w') as xD:
-    xD.write(json_file)
+  with open('authors.json', 'w') as outputFile:
+    outputFile.write(json_file)
   
 dataToJSON()

@@ -263,7 +263,8 @@
         "really",
         699
       ]
-    ]
+    ],
+    "palabrasRaras": 0.6498029833943146
   },
   {
     "Nombre": "AndrzejSapkowski",
@@ -529,7 +530,8 @@
         "blood",
         703
       ]
-    ]
+    ],
+    "palabrasRaras": 0.5574967949673534
   },
   {
     "Nombre": "BrandonSanderson",
@@ -795,7 +797,8 @@
         "make",
         645
       ]
-    ]
+    ],
+    "palabrasRaras": 0.6209508532727354
   },
   {
     "Nombre": "ELJames",
@@ -1061,7 +1064,8 @@
         "really",
         320
       ]
-    ]
+    ],
+    "palabrasRaras": 0.6093526521982464
   },
   {
     "Nombre": "GeorgeRRMartin",
@@ -1327,7 +1331,8 @@
         "red",
         1048
       ]
-    ]
+    ],
+    "palabrasRaras": 0.4795862127443083
   },
   {
     "Nombre": "JKRowling",
@@ -1593,7 +1598,8 @@
         "behind",
         860
       ]
-    ]
+    ],
+    "palabrasRaras": 0.4520647815445503
   },
   {
     "Nombre": "RupiKaur",
@@ -1859,7 +1865,8 @@
         "need",
         24
       ]
-    ]
+    ],
+    "palabrasRaras": 0.7280521262002744
   },
   {
     "Nombre": "ScottFitzgerald",
@@ -2125,7 +2132,8 @@
         "got",
         223
       ]
-    ]
+    ],
+    "palabrasRaras": 0.673053403995108
   },
   {
     "Nombre": "StephanieMeyer",
@@ -2391,7 +2399,8 @@
         "made",
         478
       ]
-    ]
+    ],
+    "palabrasRaras": 0.5972039370572378
   },
   {
     "Nombre": "StephenKing",
@@ -2657,7 +2666,8 @@
         "hand",
         514
       ]
-    ]
+    ],
+    "palabrasRaras": 0.6602154674874952
   },
   {
     "Nombre": "Tolkien",
@@ -2923,6 +2933,7 @@
         "men",
         481
       ]
-    ]
+    ],
+    "palabrasRaras": 0.5690485487439803
   }
 ]

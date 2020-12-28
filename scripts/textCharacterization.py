@@ -112,9 +112,32 @@ def fiftyMostUsedWords(text):
   for item in toRemove:
     if item in tokens:
       filtered_sentence = remove_values_from_list(filtered_sentence, item)
-  
+
   # Almacenamos un hash como clave la palabra y como valor su frecuencia
   wordsFrequency = Counter(filtered_sentence)
   # Devolvemos un array de arrays con primer valor la palabra y segundo valor su frecuencia
   return(wordsFrequency.most_common(50))
 
+def rareWords(text):
+  # Pasamos todas las palabras a minúscila para tratarlas por igual
+  text = text.lower()
+  # Procesamos el texto eliminamos los caracteres que no nos interesan incluido
+  # las palabras vacías
+  stop_words = set(stopwords.words('english'))
+  toRemove = string.punctuation
+  toRemove += string.digits
+  for elem in quotes:
+    toRemove += elem
+  tokens = nltk.word_tokenize(text)
+  filtered_sentence = [w for w in tokens if not w in stop_words]  
+  for item in toRemove:
+    if item in tokens:
+      filtered_sentence = remove_values_from_list(filtered_sentence, item)
+
+  wordsFrequency = Counter(filtered_sentence)
+  count = 0
+  for x in wordsFrequency.keys():
+    if wordsFrequency[x] <= 2:
+      count += 1
+
+  return (count / len(wordsFrequency))
