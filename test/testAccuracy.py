@@ -1,10 +1,10 @@
 import unittest
 from searchAuthor import *
 import sys
-sys.path.insert(0, '../scripts/searchAuthor.py')
+# sys.path.insert(0, '../scripts/searchAuthor.py')
 import searchAuthor
 
-class TestAccuracy(unittest.TestCase):
+class testAccuracy(unittest.TestCase):
   def testAgathaChristie(self):
     result = informationRetrieval("books/Agatha_Christie_-_The_ABC_Murder.epub")[0][1]
     self.assertEqual(result, "AgathaChristie")
@@ -41,9 +41,10 @@ class TestAccuracy(unittest.TestCase):
     result = informationRetrieval("books/The_Great_Gatsby_-_Fitzgerald_F_Scott.epub")
     self.assertEqual(result, "ScottFitzgerald")
 
-  # def testSuzanneCollins(self):
-  #   result = informationRetrieval("books\Mockingjay_The_Hunger_Games_3_-_Suzanne_Collins.epub")
-  #   self.assertEqual(result, "SuzanneCollins")
+  def testSuzanneCollins(self):
+    result = informationRetrieval("books\Mockingjay_The_Hunger_Games_3_-_Suzanne_Collins.epub")
+    self.assertEqual(result, "SuzanneCollins")
+
 
 if __name__ == '__main__':
-    unittest.main() 
+  unittest.main() 
