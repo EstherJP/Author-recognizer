@@ -7,7 +7,6 @@ import math
 from numpy import (array, dot, arccos, clip)
 from numpy.linalg import norm
 
-print(sys.argv[1])
 # Introducimos texto (ya sea a mano o en formato epub)
 # Caracterizamos dicho texto
 def characterizeText(path):
@@ -85,5 +84,3 @@ def mostrarResultado():
   for i in range(3):
     print(i + 1, ".", "Autor: ", result[i][1])
     print("Porcentaje: ", result[i][0])
-
-mostrarResultado()
