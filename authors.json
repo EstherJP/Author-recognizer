@@ -264,7 +264,14 @@
         623
       ]
     ],
-    "palabrasRaras": 0.6778426681677455
+    "palabrasRaras": 0.6778426681677455,
+    "NumeroTokens": {
+      "NumLongitudPalabras": 605794,
+      "NumFrecuenciaPuntos": 678316,
+      "NumLongitudSentenciaMedia": 644506,
+      "NumCincuentaPalabras": 748571,
+      "NumPalabrasRaras": 301970
+    }
   },
   {
     "Nombre": "AndrzejSapkowski",
@@ -531,7 +538,14 @@
         703
       ]
     ],
-    "palabrasRaras": 0.5574967949673534
+    "palabrasRaras": 0.5574967949673534,
+    "NumeroTokens": {
+      "NumLongitudPalabras": 878848,
+      "NumFrecuenciaPuntos": 1001874,
+      "NumLongitudSentenciaMedia": 939881,
+      "NumCincuentaPalabras": 1066017,
+      "NumPalabrasRaras": 451769
+    }
   },
   {
     "Nombre": "BrandonSanderson",
@@ -798,7 +812,14 @@
         668
       ]
     ],
-    "palabrasRaras": 0.6205455250570948
+    "palabrasRaras": 0.6205455250570948,
+    "NumeroTokens": {
+      "NumLongitudPalabras": 638111,
+      "NumFrecuenciaPuntos": 737684,
+      "NumLongitudSentenciaMedia": 692491,
+      "NumCincuentaPalabras": 779318,
+      "NumPalabrasRaras": 338062
+    }
   },
   {
     "Nombre": "ELJames",
@@ -1065,7 +1086,14 @@
         447
       ]
     ],
-    "palabrasRaras": 0.5977373339891785
+    "palabrasRaras": 0.5977373339891785,
+    "NumeroTokens": {
+      "NumLongitudPalabras": 456747,
+      "NumFrecuenciaPuntos": 527660,
+      "NumLongitudSentenciaMedia": 497219,
+      "NumCincuentaPalabras": 574997,
+      "NumPalabrasRaras": 221502
+    }
   },
   {
     "Nombre": "GeorgeRRMartin",
@@ -1332,7 +1360,14 @@
         1353
       ]
     ],
-    "palabrasRaras": 0.4659721181232199
+    "palabrasRaras": 0.4659721181232199,
+    "NumeroTokens": {
+      "NumLongitudPalabras": 1375015,
+      "NumFrecuenciaPuntos": 1564873,
+      "NumLongitudSentenciaMedia": 1467329,
+      "NumCincuentaPalabras": 1677567,
+      "NumPalabrasRaras": 696343
+    }
   },
   {
     "Nombre": "JKRowling",
@@ -1599,7 +1634,14 @@
         661
       ]
     ],
-    "palabrasRaras": 0.5191376347445712
+    "palabrasRaras": 0.5191376347445712,
+    "NumeroTokens": {
+      "NumLongitudPalabras": 677710,
+      "NumFrecuenciaPuntos": 779167,
+      "NumLongitudSentenciaMedia": 727752,
+      "NumCincuentaPalabras": 858166,
+      "NumPalabrasRaras": 351253
+    }
   },
   {
     "Nombre": "RupiKaur",
@@ -1866,7 +1908,14 @@
         24
       ]
     ],
-    "palabrasRaras": 0.7280521262002744
+    "palabrasRaras": 0.7280521262002744,
+    "NumeroTokens": {
+      "NumLongitudPalabras": 20916,
+      "NumFrecuenciaPuntos": 21424,
+      "NumLongitudSentenciaMedia": 21409,
+      "NumCincuentaPalabras": 21992,
+      "NumPalabrasRaras": 9267
+    }
   },
   {
     "Nombre": "ScottFitzgerald",
@@ -2133,7 +2182,14 @@
         223
       ]
     ],
-    "palabrasRaras": 0.673053403995108
+    "palabrasRaras": 0.673053403995108,
+    "NumeroTokens": {
+      "NumLongitudPalabras": 245288,
+      "NumFrecuenciaPuntos": 272577,
+      "NumLongitudSentenciaMedia": 258190,
+      "NumCincuentaPalabras": 278328,
+      "NumPalabrasRaras": 132437
+    }
   },
   {
     "Nombre": "StephanieMeyer",
@@ -2400,7 +2456,14 @@
         478
       ]
     ],
-    "palabrasRaras": 0.5972039370572378
+    "palabrasRaras": 0.5972039370572378,
+    "NumeroTokens": {
+      "NumLongitudPalabras": 442214,
+      "NumFrecuenciaPuntos": 505818,
+      "NumLongitudSentenciaMedia": 479729,
+      "NumCincuentaPalabras": 526428,
+      "NumPalabrasRaras": 224291
+    }
   },
   {
     "Nombre": "StephenKing",
@@ -2667,7 +2730,14 @@
         1089
       ]
     ],
-    "palabrasRaras": 0.6448940576708618
+    "palabrasRaras": 0.6448940576708618,
+    "NumeroTokens": {
+      "NumLongitudPalabras": 1150921,
+      "NumFrecuenciaPuntos": 1299437,
+      "NumLongitudSentenciaMedia": 1229569,
+      "NumCincuentaPalabras": 1364712,
+      "NumPalabrasRaras": 586870
+    }
   },
   {
     "Nombre": "Tolkien",
@@ -2934,6 +3004,13 @@
         481
       ]
     ],
-    "palabrasRaras": 0.5690485487439803
+    "palabrasRaras": 0.5690485487439803,
+    "NumeroTokens": {
+      "NumLongitudPalabras": 447217,
+      "NumFrecuenciaPuntos": 500553,
+      "NumLongitudSentenciaMedia": 472860,
+      "NumCincuentaPalabras": 524689,
+      "NumPalabrasRaras": 217925
+    }
   }
 ]

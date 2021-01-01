@@ -27,18 +27,33 @@ for author in authors:
 def dataToJSON():
   data = []
   i = 0
+  # AÑADIR TO_REMOVE
+  # LLAMAR A FILTERTEXT
   # Creamos el hash con los datos para cada autor
   for authorCorpus in booksText:
     aux = {}
     name = authors[i].split("/")
     aux["Nombre"] = name[2]
-    aux["ProporcionLongitudPalabras"] = lengthFreqDis(authorCorpus)
+    distribution = lengthFreqDis(authorCorpus)
+    auxSentenceLength = sentenceLength(authorCorpus)
+    fiftyWords = fiftyMostUsedWords(authorCorpus)
+    auxRareWords = rareWords(authorCorpus)
+    
+    aux["ProporcionLongitudPalabras"] = distribution[0]
     frequencies = punctuationFreq(authorCorpus)
     aux["frecuenciaComas"] = frequencies[0]
     aux["frecuenciaPuntos"] = frequencies[1]
-    aux["longitudSentenciaMedia"] = sentenceLength(authorCorpus)
-    aux["cincuentaPalabrasFrecuentes"] = fiftyMostUsedWords(authorCorpus)
-    aux["palabrasRaras"] = rareWords(authorCorpus)
+    aux["longitudSentenciaMedia"] = auxSentenceLength[0]
+    aux["cincuentaPalabrasFrecuentes"] = fiftyWords[0]
+    aux["palabrasRaras"] = auxRareWords[0]
+
+    auxTokens = {}
+    auxTokens["NumLongitudPalabras"] = distribution[1]
+    auxTokens["NumFrecuenciaPuntos"] = frequencies[2]
+    auxTokens["NumLongitudSentenciaMedia"] = auxSentenceLength[1]
+    auxTokens["NumCincuentaPalabras"] = fiftyWords[1]
+    auxTokens["NumPalabrasRaras"] = auxRareWords[1]
+    aux["NumeroTokens"] = auxTokens
 
     data.append(aux)
     i += 1

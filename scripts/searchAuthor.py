@@ -24,10 +24,10 @@ def characterizeText(path):
     auxVector.append(elem[1])
   auxVector.append(frequencies[0])
   auxVector.append(frequencies[1])
-  auxVector.append(sentenceLength(textFromBook))
-  auxVector.append(rareWords(textFromBook))
+  auxVector.append(sentenceLength(textFromBook)[0])
+  auxVector.append(rareWords(textFromBook)[0])
   textVector = np.array(auxVector)
-  textFiftyMostUsed = fiftyMostUsedWords(textFromBook)
+  textFiftyMostUsed = fiftyMostUsedWords(textFromBook)[0]
 
   return [textVector, textFiftyMostUsed]
 

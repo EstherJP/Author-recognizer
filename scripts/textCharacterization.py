@@ -34,7 +34,7 @@ def lengthFreqDis(text):
 
   filtFreqDist = sorted(filtFreqDist.items())
   
-  return filtFreqDist
+  return ([filtFreqDist, len(tokens)])
 
 # Función que obtiene la frecuencia media de los puntos y comas cada mil palabras
 def punctuationFreq(text):
@@ -68,7 +68,7 @@ def punctuationFreq(text):
   averageDot = dotAcc / numberOfPack
   # Devolvemos un array en donde en la primera posición se encuentra la frecuencia
   # de comas y en el segundo la frecuencia de puntos
-  return([round(averageComma, 6), round(averageDot, 6)])
+  return ([round(averageComma, 6), round(averageDot, 6), len(tokens)])
 
 # Función que obtiene el número medio de la longitud de frases del texto
 def sentenceLength(text):
@@ -94,7 +94,7 @@ def sentenceLength(text):
       totalLength += 1
       
   # Devolvemos la media del tamaño de las oraciones del texto
-  return(round((totalLength / numberOfSentences), 6))
+  return ([round((totalLength / numberOfSentences), 6), len(tokens)])
 
 # Función que obtiene las 50 palabras más frecuentes del texto
 def fiftyMostUsedWords(text):
@@ -116,7 +116,7 @@ def fiftyMostUsedWords(text):
   # Almacenamos un hash como clave la palabra y como valor su frecuencia
   wordsFrequency = Counter(filtered_sentence)
   # Devolvemos un array de arrays con primer valor la palabra y segundo valor su frecuencia
-  return(wordsFrequency.most_common(50))
+  return([wordsFrequency.most_common(50), len(tokens)])
 
 def rareWords(text):
   # Pasamos todas las palabras a minúscila para tratarlas por igual
@@ -140,4 +140,4 @@ def rareWords(text):
     if wordsFrequency[x] <= 2:
       count += 1
 
-  return (count / len(wordsFrequency))
+  return ([count / len(wordsFrequency), len(filtered_sentence)])
