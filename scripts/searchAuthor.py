@@ -63,7 +63,7 @@ def informationRetrieval(path):
     # Plabras comunes
     commonWords = 0
     authorFiftyMostUsed = author['cincuentaPalabrasFrecuentes']
-    for textPairs in textFiftyMostUsed:
+    for textPairs in range(50):
       for authorPairs in authorFiftyMostUsed:
         if textPairs[0] == authorPairs[0]:
           commonWords += 1

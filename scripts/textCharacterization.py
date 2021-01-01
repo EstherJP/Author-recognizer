@@ -116,7 +116,7 @@ def fiftyMostUsedWords(text):
   # Almacenamos un hash como clave la palabra y como valor su frecuencia
   wordsFrequency = Counter(filtered_sentence)
   # Devolvemos un array de arrays con primer valor la palabra y segundo valor su frecuencia
-  return([wordsFrequency.most_common(50), len(tokens)])
+  return([wordsFrequency.most_common(75), len(tokens)])
 
 def rareWords(text):
   # Pasamos todas las palabras a minúscila para tratarlas por igual
