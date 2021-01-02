@@ -7,7 +7,6 @@ import math
 from numpy import (array, dot, arccos, clip)
 from numpy.linalg import norm
 
-print(sys.argv[1])
 # Introducimos texto (ya sea a mano o en formato epub)
 # Caracterizamos dicho texto
 def characterizeText(path):
@@ -72,9 +71,7 @@ def informationRetrieval(path):
     cosineAngle = dot(authorVector, textVector)/norm(authorVector)/norm(textVector) 
     currentAngle = math.degrees(arccos(clip(cosineAngle, -1, 1))) - (commonWords * 0.5)
 
-    percentage = round(100 - (((currentAngle + 25) * 100) /
-    
-     115), 2)
+    percentage = round(100 - (((currentAngle + 25) * 100) / 115), 2)
     percentageAuthors[percentage] = author['Nombre']
 
   percentageAuthors = sorted(percentageAuthors.items(), reverse = True)
@@ -88,4 +85,4 @@ def mostrarResultado():
     print(i + 1, ".", "Autor: ", result[i][1])
     print("Porcentaje: ", result[i][0])
 
-mostrarResultado()
+# mostrarResultado()

@@ -9,19 +9,17 @@ import math
 from numpy import (array, dot, arccos, clip)
 from numpy.linalg import norm
 
-# Funcion que calcula la estadistica nueva cuando se añade un libro de un autor
-# ya existente, la ecuacion es tal que :
-#    ((resultado viejo * numero de palabras) + (resultado nuevo * numero de palabras)) / numero total de palabras
+# Función auxiliar para obtener el segundo elemento de un array
+def takeSecond(elem):
+  return elem[1]
+
+# Funcion que calcula los nuevos valores de la base de datos
 def calculateNewResult(author, charac, numTokens):
   oldResult = author.get(charac) * author['NumTokens'].get(numTokens)
   newResult = data.get(charac) * data['NumTokens'].get(numTokens)
   totalTokens = author['NumTokens'].get(numTokens) + data['NumTokens'].get(numTokens)
   newResult = (oldResult + newResult) / totalTokens
   return newResult;
-
-# Devuelve el segundo elemento de un array
-def takeSecond(elem):
-  return elem[1]
 
 # Fusiona los dos arrays de las 50 palabras mas usadas
 def topFiftyWordsMoreUsed(authorWords, dataWords):
@@ -35,6 +33,7 @@ def topFiftyWordsMoreUsed(authorWords, dataWords):
   # Reordenamos el conjunto
   authorWords.sort(key=takeSecond, reverse=True)
   return authorWords
+
 
 # El usuario introduce un libro en formato epub y el nombre del autor sin espacios
 pathBook = sys.argv[1]
