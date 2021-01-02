@@ -22,11 +22,22 @@ def openBook():
 
 def searchAuthor():
   if len(bookPath) > 0:
-    print(informationRetrieval(bookPath))
+    authors = informationRetrieval(bookPath)
+  
+    authorsTitleLabel = Label(root, text="Three authors with most probability(?)", bg="alice blue")
+    authorsTitleLabel.place(x=5, y=100)
+    textAuthors = ""
+    for i in range(3):
+      textAuthors += str(i + 1) + ".- " + authors[i][1] + " "
+      textAuthors += "con un porcentaje de similitud de " + str(authors[i][0]) + "%\n"
+      
+    authorsLabel = Label(root, text=textAuthors, bg="alice blue")
+    authorsLabel.place(x=5, y=130)
   else:
     messagebox.showinfo('ERROR','Must select a book')
     
 def application():
+  global root
   root = Tk()
   root.title("Author-recognizer")
   root.geometry("750x500")
@@ -47,20 +58,25 @@ def application():
   # tabControl.add(tabIncident, text="Incident")
 
   searchTitle = Label(root, text="Application to find the name of the author of a book", bg="alice blue")
-  searchTitle.grid(column=1, row=0)
+  # searchTitle.grid(column=1, row=0)
   # searchTitle.pack()
+  searchTitle.place(x=35, y=5)
 
   global fileExplorer
-  fileExplorer = Label(root, text = "File explorer", bd=4, bg="ghost white", width="75", relief=RIDGE) 
-  fileExplorer.grid(column=1, row=1)
+  fileExplorer = Label(root, text = "File explorer", bd=4, bg="ghost white", width=75, relief=RIDGE) 
+  # fileExplorer.grid(column=1, row=1)
+  fileExplorer.place(x=15, y=30)
   # fileExplorer.pack()
 
-  openButton = Button(root, text="Select file", command=openBook, bg="lavender")
-  openButton.grid(column=0, row=1)
+  openButton = Button(root, text="Select file", command=openBook, bg="lavender", width=11, height=1)
+  # openButton.grid(column=0, row=1)
+  openButton.place(x=480, y=30)
+
   # openButton.pack()
 
-  searchButton = Button(root, text="Search author", command=searchAuthor, bg="lavender")
-  searchButton.grid(column=0, row=2)
+  searchButton = Button(root, text="Search author", command=searchAuthor, bg="lavender", width=11, height=1)
+  # searchButton.grid(column=0, row=2)
+  searchButton.place(x=580, y=30)
   # searchButton.pack()
 
   root.mainloop()
