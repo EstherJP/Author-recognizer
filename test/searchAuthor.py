@@ -23,10 +23,10 @@ def characterizeText(path):
     auxVector.append(elem[1])
   auxVector.append(frequencies[0])
   auxVector.append(frequencies[1])
-  auxVector.append(sentenceLength(textFromBook))
-  auxVector.append(rareWords(textFromBook))
+  auxVector.append(sentenceLength(textFromBook)[0])
+  auxVector.append(rareWords(textFromBook)[0])
   textVector = np.array(auxVector)
-  textFiftyMostUsed = fiftyMostUsedWords(textFromBook)
+  textFiftyMostUsed = fiftyMostUsedWords(textFromBook)[0]
 
   return [textVector, textFiftyMostUsed]
 
@@ -62,7 +62,7 @@ def informationRetrieval(path):
     # Plabras comunes
     commonWords = 0
     authorFiftyMostUsed = author['cincuentaPalabrasFrecuentes']
-    for textPairs in textFiftyMostUsed:
+    for textPairs in range(50):
       for authorPairs in authorFiftyMostUsed:
         if textPairs[0] == authorPairs[0]:
           commonWords += 1
@@ -84,3 +84,5 @@ def mostrarResultado():
   for i in range(3):
     print(i + 1, ".", "Autor: ", result[i][1])
     print("Porcentaje: ", result[i][0])
+
+# mostrarResultado()

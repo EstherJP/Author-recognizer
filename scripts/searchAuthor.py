@@ -19,7 +19,7 @@ def characterizeText(path):
   auxVector = [];
   # Igualamos el autor mejor candidato al primero que aparezca en el JSON
   frequencies = punctuationFreq(textFromBook)
-  freqDist = lengthFreqDis(textFromBook)
+  freqDist = lengthFreqDis(textFromBook)[0]
   for elem in freqDist:
     auxVector.append(elem[1])
   auxVector.append(frequencies[0])
@@ -27,7 +27,7 @@ def characterizeText(path):
   auxVector.append(sentenceLength(textFromBook)[0])
   auxVector.append(rareWords(textFromBook)[0])
   textVector = np.array(auxVector)
-  textFiftyMostUsed = fiftyMostUsedWords(textFromBook)[0]
+  textFiftyMostUsed = fiftyMostUsedWords(textFromBook)
 
   return [textVector, textFiftyMostUsed]
 
@@ -64,15 +64,17 @@ def informationRetrieval(path):
     commonWords = 0
     authorFiftyMostUsed = author['cincuentaPalabrasFrecuentes']
     for textPairs in range(50):
-      for authorPairs in authorFiftyMostUsed:
-        if textPairs[0] == authorPairs[0]:
+      for authorPairs in range(50):
+        if textFiftyMostUsed[textPairs][0] == authorFiftyMostUsed[authorPairs][0]:
           commonWords += 1
 
     # Calculamos el angulo 
     cosineAngle = dot(authorVector, textVector)/norm(authorVector)/norm(textVector) 
     currentAngle = math.degrees(arccos(clip(cosineAngle, -1, 1))) - (commonWords * 0.5)
 
-    percentage = round(100 - (((currentAngle + 25) * 100) / 115), 2)
+    percentage = round(100 - (((currentAngle + 25) * 100) /
+    
+     115), 2)
     percentageAuthors[percentage] = author['Nombre']
 
   percentageAuthors = sorted(percentageAuthors.items(), reverse = True)

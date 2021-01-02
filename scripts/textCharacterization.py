@@ -84,7 +84,6 @@ def sentenceLength(text):
       tokens = remove_values_from_list(tokens, item)
 
   # Contamos el número de palabras de cada oración 
-  sentenceSizes = []
   numberOfSentences = 0
   totalLength = 0 
   for word in tokens:
@@ -94,7 +93,7 @@ def sentenceLength(text):
       totalLength += 1
       
   # Devolvemos la media del tamaño de las oraciones del texto
-  return ([round((totalLength / numberOfSentences), 6), len(tokens)])
+  return [(round((totalLength / numberOfSentences), 6)), len(tokens)]
 
 # Función que obtiene las 50 palabras más frecuentes del texto
 def fiftyMostUsedWords(text):
@@ -116,7 +115,7 @@ def fiftyMostUsedWords(text):
   # Almacenamos un hash como clave la palabra y como valor su frecuencia
   wordsFrequency = Counter(filtered_sentence)
   # Devolvemos un array de arrays con primer valor la palabra y segundo valor su frecuencia
-  return([wordsFrequency.most_common(75), len(tokens)])
+  return (wordsFrequency.most_common(75))
 
 def rareWords(text):
   # Pasamos todas las palabras a minúscila para tratarlas por igual
@@ -140,4 +139,4 @@ def rareWords(text):
     if wordsFrequency[x] <= 2:
       count += 1
 
-  return ([count / len(wordsFrequency), len(filtered_sentence)])
+  return [(count / len(wordsFrequency)), len(filtered_sentence)]
