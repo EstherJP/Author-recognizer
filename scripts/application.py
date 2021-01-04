@@ -70,7 +70,7 @@ def application():
 
   openButton = Button(root, text="Select file", command=openBook, bg="lavender", width=11, height=1)
   # openButton.grid(column=0, row=1)
-  openButton.place(x=480, y=30)
+  openButton.place(x=485, y=30)
 
   # openButton.pack()
 
