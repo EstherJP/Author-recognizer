@@ -1,1 +1,0 @@
-# Comunicador de incidencias
