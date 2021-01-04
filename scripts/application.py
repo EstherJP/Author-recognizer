@@ -44,40 +44,42 @@ def application():
   root.configure(background='alice blue')
 
   # Control de ventanas
-  # tabControl = ttk.Notebook(root)
-  # tabSearch = Frame(tabControl)
-  # tabTrain = Frame(tabControl)
-  # tabIncident = Frame(tabControl)
+  tabControl = ttk.Notebook(root)
+  tabSearch = Frame(tabControl)
+  tabTrain = Frame(tabControl)
+  tabIncident = Frame(tabControl)
 
   # tabSearch.pack(fill="both", expand=1)
   # tabTrain.pack(fill="both", expand=1)
   # tabIncident.pack(fill="both", expand=1)
 
-  # tabControl.add(tabSearch, text="Search")
-  # tabControl.add(tabTrain, text="Train")
-  # tabControl.add(tabIncident, text="Incident")
+  tabControl.add(tabSearch, text="Search")
+  tabControl.add(tabTrain, text="Train")
+  tabControl.add(tabIncident, text="Incident")
 
-  searchTitle = Label(root, text="Application to find the name of the author of a book", bg="alice blue")
+  searchTitle = Label(tabSearch, text="Application to find the name of the author of a book", bg="alice blue")
   # searchTitle.grid(column=1, row=0)
   # searchTitle.pack()
   searchTitle.place(x=35, y=5)
 
   global fileExplorer
-  fileExplorer = Label(root, text = "File explorer", bd=4, bg="ghost white", width=75, relief=RIDGE) 
+  fileExplorer = Label(tabSearch, text = "File explorer", bd=4, bg="ghost white", width=75, relief=RIDGE) 
   # fileExplorer.grid(column=1, row=1)
   fileExplorer.place(x=15, y=30)
   # fileExplorer.pack()
 
-  openButton = Button(root, text="Select file", command=openBook, bg="lavender", width=11, height=1)
+  openButton = Button(tabSearch, text="Select file", command=openBook, bg="lavender", width=11, height=1)
   # openButton.grid(column=0, row=1)
   openButton.place(x=485, y=30)
 
   # openButton.pack()
 
-  searchButton = Button(root, text="Search author", command=searchAuthor, bg="lavender", width=11, height=1)
+  searchButton = Button(tabSearch, text="Search author", command=searchAuthor, bg="lavender", width=11, height=1)
   # searchButton.grid(column=0, row=2)
   searchButton.place(x=580, y=30)
   # searchButton.pack()
+
+  tabControl.pack(expand=1, fill='both')
 
   root.mainloop()
 
