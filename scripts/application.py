@@ -20,22 +20,23 @@ def openBook(fileExplorer):
   else:
     filteredPath = bookPath.split('/')
     showPath = filteredPath[-2] + '/' + filteredPath[-1]
-    fileExplorer.configure(text=showPath)
-
+    fileExplorer.configure(text=showPath) 
+  
 def searchAuthor():
   if len(bookPath) > 0:
     authors = informationRetrieval(bookPath)
-    authorsTitleLabel = Label(tabSearch, text="Three authors with most probability", bg="alice blue")
+    authorsTitleLabel = Label(tabSearch, text="Three authors with most probability")
     authorsTitleLabel.place(x=5, y=100)
     textAuthors = ""
     for i in range(3):
       textAuthors += str(i + 1) + ".- " + authors[i][1] + " "
       textAuthors += "con un porcentaje de similitud de " + str(authors[i][0]) + "%\n"
       
-    authorsLabel = Label(tabSearch, text=textAuthors, bg="alice blue")
+    authorsLabel = Label(tabSearch, text=textAuthors)
     authorsLabel.place(x=5, y=130)
   else:
-    messagebox.showinfo('ERROR','Must select a book')
+    messagebox.showinfo('BAD MESSAGE','Must select a book')
+
 
 def callIncidences(name, email, so, incidenceText):
   userName = name.get("1.0", "end-1c")
@@ -45,10 +46,11 @@ def callIncidences(name, email, so, incidenceText):
 
   writeIncidences(userName, userEmail, userSO, userIncidence)
 
-def callUserTrain(authorName):
+def callUserTrain(authorName, text):
   authorBook = authorName.get("1.0", "end-1c")
-
   reTrainIA(bookPath, authorBook)
+  text.place(x=15, y=100)
+
     
 def application():
   # Creamos la pestaña principal de nuestra aplicacion
@@ -67,14 +69,14 @@ def application():
   # Ponemos nombres a nuestras pestañas
   tabControl.add(tabSearch, text="Search")
   tabControl.add(tabTrain, text="Train")
-  tabControl.add(tabIncidence, text="Incident")
+  tabControl.add(tabIncidence, text="Incidences")
 
   tabControl.pack(expand=1, fill='both')
 
   # PESTAÑA DE BUSCAR AUTOR
   # Mostramos el titulo de la aplicacion
-  searchTitle = Label(tabSearch, text="Application to find the name of the author of a book", bg="alice blue")
-  searchTitle.place(x=35, y=5)
+  searchTitle = Label(tabSearch, text="Application to find the name of the author of a book")
+  searchTitle.place(x=15, y=5)
 
   # global fileExplorer
   # Muestra la ruta del libro seleccionado
@@ -85,12 +87,17 @@ def application():
   openButtonS = Button(tabSearch, text="Select file", command=lambda: openBook(fileExplorerS), bg="lavender", width=11, height=1)
   openButtonS.place(x=485, y=30)
 
+  waitLabel = Label(tabSearch, text="This could take a while...")
+  waitLabel.place(x=15, y=65)
   # Una vez introducido el libro, seleccionamos buscar los autores mas posible y los mostramos
   searchButton = Button(tabSearch, text="Search author", command=searchAuthor, bg="lavender", width=11, height=1)
   searchButton.place(x=580, y=30)
 
   # PESTAÑA ENTRENAMIENTO
   # Muestra la ruta del libro seleccionado
+  trainTitle = Label(tabTrain, text="Here you can introduce your .epub files to train and improve the IA!")
+  trainTitle.place(x=15, y=10)
+
   fileExplorerT = Label(tabTrain, text = "", bd=4, bg="ghost white", width=75, relief=RIDGE) 
   fileExplorerT.place(x=15, y=30)
 
@@ -98,17 +105,21 @@ def application():
   openButtonT = Button(tabTrain, text="Select file", command=lambda: openBook(fileExplorerT), bg="lavender", width=11, height=1)
   openButtonT.place(x=485, y=30)
 
-  authorBook = Label(tabTrain, text = "Author's surname", bd=4, bg="ghost white", width=20, relief=RIDGE) 
+  authorBook = Label(tabTrain, text = "Author's surname", width=20) 
   authorBook.place(x=15, y=60)
   insertAuthor = Text(tabTrain, height=1, width=25)
-  insertAuthor.place(x=160 , y=60)
+  insertAuthor.place(x=140, y=60)
 
-  trainButton = Button(tabTrain, text="Train", command=lambda: callUserTrain(insertAuthor), bg="lavender", width=12, height=1)
-  trainButton.place(x=330, y=140)
+  feedbackLabel = Label(tabTrain, text = "training done correctly!", bd=4, bg="ghost white", width=75, relief=RIDGE) 
+  trainButton = Button(tabTrain, text="Train", command=lambda: callUserTrain(insertAuthor, feedbackLabel), bg="lavender", width=12, height=1)
+  trainButton.place(x=250, y=100)
 
   # PESTAÑA DE INCIDENCIAS
   # Realizamos formulario de incidencias
   # Introducir el nombre del usuario
+  title = Label(tabIncidence, text = "Here you can send your opinions and incidences. We will attend them as fast as possible.") 
+  title.place(x=15, y=5)
+
   userName = Label(tabIncidence, text = "Name", bd=4, bg="ghost white", width=20, relief=RIDGE) 
   userName.place(x=15, y=30)
   insertName = Text(tabIncidence, height=1, width=25)
