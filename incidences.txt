@@ -23,3 +23,8 @@ Contact: esther.jp.99@gmail.com
 Operative System: Windows 10
 Incidence: Cuando le doy a entrenar me sale el mensaje que ya se ha entrando con el botón train super puesto
 --------------------
+Name: pepe
+Contact: super pepe
+Operative System: pepito
+Incidence: pepote
+--------------------

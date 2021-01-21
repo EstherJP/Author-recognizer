@@ -9,9 +9,10 @@ from tkinter import messagebox
 
 bookPath = ''
 
+# Funcion que abre el buscador de archivo para seleccionar el fichero en formato epub que desees
 def openBook(fileExplorer):
   global bookPath
-  auxPath = filedialog.askopenfilename(initialdir="C:/Users/eduar/Documents/ULL/4º/SI/Proyecto_final/Author-recognizer/books", title="Seleccionar fichero", filetypes=(("Text Files", "*.epub"), ))
+  auxPath = filedialog.askopenfilename(initialdir="C:/Users/", title="Seleccionar fichero", filetypes=(("Text Files", "*.epub"), ))
   if auxPath != '':
     filteredPath = auxPath.split('/')
     showPath = filteredPath[-2] + '/' + filteredPath[-1] 
@@ -22,6 +23,7 @@ def openBook(fileExplorer):
     showPath = filteredPath[-2] + '/' + filteredPath[-1]
     fileExplorer.configure(text=showPath) 
   
+# Funcion que busca los tres mejores autores
 def callSearchAuthor():
   if len(bookPath) > 0:
     authors = informationRetrieval(bookPath)
@@ -35,9 +37,9 @@ def callSearchAuthor():
     authorsLabel = Label(tabSearch, text=textAuthors)
     authorsLabel.place(x=5, y=130)
   else:
-    messagebox.showinfo('BAD MESSAGE','Must select a book')
+    messagebox.showwarning('SEARCH','Must select a book')
 
-
+# Funcion que crea las incidencias
 def callIncidences(name, email, so, incidenceText):
   userName = name.get("1.0", "end-1c")
   userEmail = email.get("1.0", "end-1c")
@@ -45,13 +47,22 @@ def callIncidences(name, email, so, incidenceText):
   userIncidence = incidenceText.get("1.0", "end-1c")
 
   writeIncidences(userName, userEmail, userSO, userIncidence)
+  messagebox.showinfo('INCIDENCES', 'Your incidence was sent with succes.')
 
-def callUserTrain(authorName, text):
-  authorBook = authorName.get("1.0", "end-1c")
-  retrainIA(bookPath, authorBook)
-  text.place(x=15, y=100)
+# Funcion que permite al usuario agrandar la base de datos
+def callUserTrain(authorName):
+  if len(bookPath) > 0 and len(authorName.get("1.0", "end-1c")) > 0:
+    authorBook = authorName.get("1.0", "end-1c")
+    retrainIA(bookPath, authorBook)
+    messagebox.showinfo('TRAIN', 'Training done correctly')
+  elif len(bookPath) <= 0 and len(authorName.get("1.0", "end-1c")) > 0: 
+    messagebox.showwarning('TRAIN','Must select a book')
+  elif len(bookPath) > 0 and len(authorName.get("1.0", "end-1c")) <= 0: 
+    messagebox.showwarning('TRAIN','Must select an author')
+  else:
+    messagebox.showwarning('TRAIN','Must select a book and an author')
 
-    
+# Aplicacion    
 def application():
   # Creamos la pestaña principal de nuestra aplicacion
   root = Tk()
@@ -110,8 +121,7 @@ def application():
   insertAuthor = Text(tabTrain, height=1, width=25)
   insertAuthor.place(x=140, y=60)
 
-  feedbackLabel = Label(tabTrain, text = "training done correctly!", bd=4, bg="ghost white", width=75, relief=RIDGE) 
-  trainButton = Button(tabTrain, text="Train", command=lambda: callUserTrain(insertAuthor, feedbackLabel), bg="lavender", width=12, height=1)
+  trainButton = Button(tabTrain, text="Train", command=lambda: callUserTrain(insertAuthor), bg="lavender", width=12, height=1)
   trainButton.place(x=250, y=100)
 
   # PESTAÑA DE INCIDENCIAS
