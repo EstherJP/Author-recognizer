@@ -1,6 +1,6 @@
 from basicFunctions import *
 from textCharacterization import * 
-import sys
+import sys # podemos quitar este sys la verdad
 import numpy as np 
 import json
 import math

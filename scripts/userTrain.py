@@ -1,14 +1,13 @@
 from basicFunctions import *
 from textCharacterization import * 
 # from searchAuthor import * 
-
-import sys
-import numpy as np 
+# import sys
+# import numpy as np 
 import os
 import json
-import math
-from numpy import (array, dot, arccos, clip)
-from numpy.linalg import norm
+# import math
+# from numpy import (array, dot, arccos, clip)
+# from numpy.linalg import norm
 
 # Función auxiliar para obtener el segundo elemento de un array
 def takeSecond(elem):

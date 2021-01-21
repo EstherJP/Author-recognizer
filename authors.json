@@ -4130,7 +4130,7 @@
             ],
             [
                 7,
-                0.056208
+                0.05620800000000001
             ],
             [
                 8,
@@ -4154,7 +4154,7 @@
             ],
             [
                 13,
-                0.000976
+                0.0009759999999999999
             ],
             [
                 14,
@@ -4167,203 +4167,203 @@
         "cincuentaPalabrasFrecuentes": [
             [
                 "peeta",
-                571
+                1142
             ],
             [
                 "one",
-                421
+                842
             ],
             [
                 "says",
-                419
+                838
             ],
             [
                 "back",
-                324
+                648
             ],
             [
                 "say",
-                316
+                632
             ],
             [
                 "us",
-                286
+                572
             ],
             [
                 "know",
-                270
+                540
             ],
             [
                 "district",
-                231
+                462
             ],
             [
                 "haymitch",
-                225
+                450
             ],
             [
                 "get",
-                221
+                442
             ],
             [
                 "even",
-                214
+                428
             ],
             [
                 "think",
-                212
+                424
             ],
             [
                 "see",
-                200
+                400
             ],
             [
                 "like",
-                198
+                396
             ],
             [
                 "time",
-                194
+                388
             ],
             [
                 "right",
-                183
+                366
             ],
             [
                 "could",
-                169
+                338
             ],
             [
                 "go",
-                165
+                330
             ],
             [
                 "would",
-                162
+                324
             ],
             [
                 "rue",
-                159
+                318
             ],
             [
                 "still",
-                154
+                308
             ],
             [
                 "around",
-                154
+                308
             ],
             [
                 "take",
-                144
+                288
             ],
             [
                 "make",
-                144
+                288
             ],
             [
                 "first",
-                139
+                278
             ],
             [
                 "cato",
-                128
+                256
             ],
             [
                 "must",
-                124
+                248
             ],
             [
                 "never",
-                121
+                242
             ],
             [
                 "capitol",
-                121
+                242
             ],
             [
                 "well",
-                120
+                240
             ],
             [
                 "good",
-                120
+                240
             ],
             [
                 "want",
-                120
+                240
             ],
             [
                 "head",
-                120
+                240
             ],
             [
                 "prim",
-                119
+                238
             ],
             [
                 "eyes",
-                117
+                234
             ],
             [
                 "boy",
-                117
+                234
             ],
             [
                 "way",
-                115
+                230
             ],
             [
                 "tributes",
-                114
+                228
             ],
             [
                 "something",
-                114
+                228
             ],
             [
                 "water",
-                113
+                226
             ],
             [
                 "away",
-                113
+                226
             ],
             [
                 "girl",
-                112
+                224
             ],
             [
                 "cinna",
-                111
+                222
             ],
             [
                 "going",
-                110
+                220
             ],
             [
                 "let",
-                107
+                214
             ],
             [
                 "last",
-                105
+                210
             ],
             [
                 "much",
-                105
+                210
             ],
             [
                 "hear",
-                104
+                208
             ],
             [
                 "games",
-                103
+                206
             ],
             [
                 "mother",
-                103
+                206
             ],
             [
                 "thing",
@@ -4468,10 +4468,10 @@
         ],
         "palabrasRaras": 0.6483613817537643,
         "NumTokens": {
-            "NumLongitudPalabras": 103490,
-            "NumFrecuenciaPuntos": 117124,
-            "NumLongitudSentenciaMedia": 111204,
-            "NumPalabrasRaras": 47180
+            "NumLongitudPalabras": 206980,
+            "NumFrecuenciaPuntos": 234248,
+            "NumLongitudSentenciaMedia": 222408,
+            "NumPalabrasRaras": 94360
         },
         "Nombre": "Collins"
     }

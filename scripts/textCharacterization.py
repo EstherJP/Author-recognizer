@@ -4,7 +4,6 @@ import string
 from basicFunctions import *
 from collections import Counter
 
-############ Ver si podemos generalizar la tokenizacion
 ################3 ¿Por que estan globales?
 stopWords = [] # Array que contendrá las palabras vacías del inglés
 quotes = ["’", '“', '”', "'", '"'] # Array que contiene las comillas de citas

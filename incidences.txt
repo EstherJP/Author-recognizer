@@ -18,3 +18,8 @@ Contact: tusmuertos33
 Operative System: Tu madre
 Incidence: Esta aplicacion es una basura como la vida de la gente que lo hizo
 --------------------
+Name: Esther Jorge Paramio
+Contact: esther.jp.99@gmail.com
+Operative System: Windows 10
+Incidence: Cuando le doy a entrenar me sale el mensaje que ya se ha entrando con el botón train super puesto
+--------------------

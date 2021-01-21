@@ -1,16 +1,16 @@
-import nltk
-import ebooklib
+# import nltk
+# import ebooklib
 from ebooklib import epub
-from bs4 import BeautifulSoup
-import string
+# from bs4 import BeautifulSoup
+# import string
 from glob2 import glob
 from pylab import *
-from basicFunctions import *
+# from basicFunctions import *
 from textCharacterization import * 
 import json
 import os
 
-# Recorremos nuestra base de datos y concatenamos los libros po autor
+# Recorremos nuestra base de datos y concatenamos los libros por autor
 separator = " "
 authors = glob("./booksTrain/*")
 booksText = []
