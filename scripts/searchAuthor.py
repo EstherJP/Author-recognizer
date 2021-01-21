@@ -13,7 +13,7 @@ def characterizeText(path):
   textFromBook = getTextFromChaps(epub2text(path))
   # Leemos nuestro fichero JSON con las caracteriscas de los autores de nuestra bbdd
   currentText = {}
-  currentText["cincuentaPalabrasFrecuentes"] = fiftyMostUsedWords(textFromBook)
+  currentText["palabrasFrecuentes"] = most75UsedWords(textFromBook)
 
   auxVector = [];
   # Igualamos el autor mejor candidato al primero que aparezca en el JSON
@@ -26,10 +26,11 @@ def characterizeText(path):
   auxVector.append(sentenceLength(textFromBook)[0])
   auxVector.append(rareWords(textFromBook)[0])
   textVector = np.array(auxVector)
-  textFiftyMostUsed = fiftyMostUsedWords(textFromBook)
+  textWordsMostUsed = most75UsedWords(textFromBook)
 
-  return [textVector, textFiftyMostUsed]
+  return [textVector, textWordsMostUsed]
 
+# Busca y ordena los autores de más probable a menos
 def informationRetrieval(path):
   # Leemos el fichero json y lo guardamos en un objeto
   with open('authors.json') as json_file:
@@ -37,11 +38,9 @@ def informationRetrieval(path):
   
   characterizedText = characterizeText(path)
   textVector = characterizedText[0]
-  textFiftyMostUsed = characterizedText[1]
+  textWordsMostUsed = characterizedText[1]
 
-  # Inicializamos el mejor angulo al valor mas bajo para coger el primer author como referencia
-  bestAngle = 90;
-  bestAuthor = 'nadie';
+  # Inicializamos los parámetros que vamos a usar
   currentAngle = 0
   percentageAuthors = {}
   # A medida que leemos los datos de cada autor, vamos actualizando el autor mejor candidato 
@@ -61,10 +60,10 @@ def informationRetrieval(path):
 
     # Plabras comunes
     commonWords = 0
-    authorFiftyMostUsed = author['cincuentaPalabrasFrecuentes']
+    authorWordsMostUsed = author['palabrasFrecuentes']
     for textPairs in range(50):
       for authorPairs in range(50):
-        if textFiftyMostUsed[textPairs][0] == authorFiftyMostUsed[authorPairs][0]:
+        if textWordsMostUsed[textPairs][0] == authorWordsMostUsed[authorPairs][0]:
           commonWords += 1
 
     # Calculamos el angulo 
@@ -78,11 +77,12 @@ def informationRetrieval(path):
 
   return percentageAuthors
 
-def mostrarResultado():
+# Muestra los 3 primeros resultados por la terminal
+def showResult():
   result = informationRetrieval(sys.argv[1])
   print("El texto introducido probablemente sea de :")
   for i in range(3):
     print(i + 1, ".", "Autor: ", result[i][1])
     print("Porcentaje: ", result[i][0])
 
-# mostrarResultado()
+# showResult()

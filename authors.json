@@ -62,7 +62,7 @@
         "frecuenciaComas": 10.072274,
         "frecuenciaPuntos": 15.792784,
         "longitudSentenciaMedia": 15.750858,
-        "cincuentaPalabrasFrecuentes": [
+        "palabrasFrecuentes": [
             [
                 "\u2018",
                 7680
@@ -362,6 +362,106 @@
             [
                 "mean",
                 473
+            ],
+            [
+                "satterthwaite",
+                472
+            ],
+            [
+                "hercule",
+                468
+            ],
+            [
+                "away",
+                463
+            ],
+            [
+                "voice",
+                463
+            ],
+            [
+                "case",
+                458
+            ],
+            [
+                "saw",
+                453
+            ],
+            [
+                "let",
+                449
+            ],
+            [
+                "kind",
+                449
+            ],
+            [
+                "left",
+                444
+            ],
+            [
+                "things",
+                444
+            ],
+            [
+                "madame",
+                443
+            ],
+            [
+                "shook",
+                442
+            ],
+            [
+                "turned",
+                435
+            ],
+            [
+                "death",
+                426
+            ],
+            [
+                "hand",
+                425
+            ],
+            [
+                "sure",
+                420
+            ],
+            [
+                "make",
+                418
+            ],
+            [
+                "arundell",
+                418
+            ],
+            [
+                "take",
+                417
+            ],
+            [
+                "put",
+                414
+            ],
+            [
+                "round",
+                412
+            ],
+            [
+                "told",
+                406
+            ],
+            [
+                "house",
+                406
+            ],
+            [
+                "heard",
+                401
+            ],
+            [
+                "seemed",
+                400
             ]
         ],
         "palabrasRaras": 0.6778426681677455,
@@ -435,7 +535,7 @@
         "frecuenciaComas": 12.638666,
         "frecuenciaPuntos": 14.570283,
         "longitudSentenciaMedia": 14.404855,
-        "cincuentaPalabrasFrecuentes": [
+        "palabrasFrecuentes": [
             [
                 "\u2018",
                 18612
@@ -735,6 +835,106 @@
             [
                 "tell",
                 545
+            ],
+            [
+                "looking",
+                543
+            ],
+            [
+                "give",
+                542
+            ],
+            [
+                "knew",
+                542
+            ],
+            [
+                "heard",
+                539
+            ],
+            [
+                "fell",
+                531
+            ],
+            [
+                "towards",
+                517
+            ],
+            [
+                "yes",
+                515
+            ],
+            [
+                "left",
+                513
+            ],
+            [
+                "anything",
+                508
+            ],
+            [
+                "voice",
+                494
+            ],
+            [
+                "got",
+                492
+            ],
+            [
+                "old",
+                487
+            ],
+            [
+                "must",
+                483
+            ],
+            [
+                "three",
+                482
+            ],
+            [
+                "hair",
+                477
+            ],
+            [
+                "came",
+                471
+            ],
+            [
+                "another",
+                463
+            ],
+            [
+                "stood",
+                455
+            ],
+            [
+                "someone",
+                453
+            ],
+            [
+                "table",
+                448
+            ],
+            [
+                "white",
+                438
+            ],
+            [
+                "already",
+                437
+            ],
+            [
+                "asked",
+                437
+            ],
+            [
+                "world",
+                435
+            ],
+            [
+                "everything",
+                424
             ]
         ],
         "palabrasRaras": 0.5574967949673534,
@@ -808,7 +1008,7 @@
         "frecuenciaComas": 12.839361,
         "frecuenciaPuntos": 16.836968,
         "longitudSentenciaMedia": 11.753057,
-        "cincuentaPalabrasFrecuentes": [
+        "palabrasFrecuentes": [
             [
                 "``",
                 7559
@@ -1108,6 +1308,106 @@
             [
                 "zane",
                 504
+            ],
+            [
+                "looking",
+                503
+            ],
+            [
+                "hand",
+                497
+            ],
+            [
+                "come",
+                487
+            ],
+            [
+                "felt",
+                486
+            ],
+            [
+                "night",
+                485
+            ],
+            [
+                "take",
+                479
+            ],
+            [
+                "enough",
+                478
+            ],
+            [
+                "marasi",
+                477
+            ],
+            [
+                "little",
+                468
+            ],
+            [
+                "behind",
+                466
+            ],
+            [
+                "tindwyl",
+                465
+            ],
+            [
+                "though",
+                464
+            ],
+            [
+                "sat",
+                459
+            ],
+            [
+                "davis",
+                452
+            ],
+            [
+                "might",
+                451
+            ],
+            [
+                "knew",
+                451
+            ],
+            [
+                "first",
+                448
+            ],
+            [
+                "found",
+                448
+            ],
+            [
+                "long",
+                448
+            ],
+            [
+                "yet",
+                445
+            ],
+            [
+                "find",
+                440
+            ],
+            [
+                "someone",
+                439
+            ],
+            [
+                "look",
+                437
+            ],
+            [
+                "always",
+                433
+            ],
+            [
+                "cett",
+                427
             ]
         ],
         "palabrasRaras": 0.6205455250570948,
@@ -1123,280 +1423,248 @@
         "ProporcionLongitudPalabras": [
             [
                 1,
-                0.0848775101698874
+                0.079042
             ],
             [
                 2,
-                0.18006697657681917
+                0.185238
             ],
             [
                 3,
-                0.21815275813023297
+                0.213838
             ],
             [
                 4,
-                0.19177958247016347
+                0.190009
             ],
             [
                 5,
-                0.10599858122771788
+                0.108585
             ],
             [
                 6,
-                0.07184951888484833
+                0.073207
             ],
             [
                 7,
-                0.061045096591222425
+                0.062945
             ],
             [
                 8,
-                0.0339125576358499
+                0.033918
             ],
             [
                 9,
-                0.025662743796693085
+                0.026349
             ],
             [
                 10,
-                0.012397059103752314
+                0.012261
             ],
             [
                 11,
-                0.006879084784745493
+                0.007004
             ],
             [
                 12,
-                0.003836026746641667
+                0.003906
             ],
             [
                 13,
-                0.0017434404939937653
+                0.00183
             ],
             [
                 14,
-                0.0007575790331632405
+                0.000819
             ]
         ],
-        "frecuenciaComas": 12.0386875634734,
-        "frecuenciaPuntos": 19.09471161943507,
-        "longitudSentenciaMedia": 11.393062992712686,
-        "cincuentaPalabrasFrecuentes": [
+        "frecuenciaComas": 12.196159,
+        "frecuenciaPuntos": 19.167217,
+        "longitudSentenciaMedia": 11.318683,
+        "palabrasFrecuentes": [
             [
                 "christian",
-                2695
+                2361
             ],
             [
                 "eyes",
-                2005
-            ],
-            [
-                "want",
-                1930
-            ],
-            [
-                "like",
-                1820
+                1587
             ],
             [
                 "back",
-                1779
+                1347
+            ],
+            [
+                "like",
+                1343
+            ],
+            [
+                "want",
+                1306
             ],
             [
                 "know",
-                1685
-            ],
-            [
-                "says",
-                1429
-            ],
-            [
-                "grey",
-                1416
-            ],
-            [
-                "head",
-                1287
-            ],
-            [
-                "oh",
-                1222
-            ],
-            [
-                "ana",
-                1186
-            ],
-            [
-                "one",
-                1177
-            ],
-            [
-                "anastasia",
-                1151
-            ],
-            [
-                "think",
-                1126
-            ],
-            [
-                "hand",
-                1097
+                1255
             ],
             [
                 "alessia",
                 1046
             ],
             [
-                "yes",
-                1024
+                "says",
+                1027
             ],
             [
-                "steele",
-                973
+                "head",
+                1001
             ],
             [
-                "going",
-                944
+                "oh",
+                991
             ],
             [
-                "see",
-                928
+                "one",
+                894
             ],
             [
-                "good",
-                892
+                "hand",
+                871
             ],
             [
-                "time",
-                881
+                "think",
+                848
             ],
             [
-                "go",
-                877
-            ],
-            [
-                "take",
-                864
-            ],
-            [
-                "hands",
-                861
-            ],
-            [
-                "face",
-                846
-            ],
-            [
-                "get",
-                836
-            ],
-            [
-                "hair",
+                "grey",
                 833
-            ],
-            [
-                "around",
-                824
             ],
             [
                 "i\u201fm",
                 813
             ],
             [
-                "look",
-                806
-            ],
-            [
-                "miss",
-                784
-            ],
-            [
-                "need",
-                774
-            ],
-            [
                 "\u2013",
                 741
             ],
             [
-                "voice",
-                734
+                "yes",
+                712
             ],
             [
-                "room",
-                722
+                "anastasia",
+                706
             ],
             [
-                "would",
-                722
+                "hands",
+                689
             ],
             [
-                "mouth",
-                721
-            ],
-            [
-                "well",
-                714
+                "going",
+                685
             ],
             [
                 "he\u201fs",
                 685
             ],
             [
-                "still",
-                685
+                "face",
+                667
             ],
             [
-                "way",
-                634
+                "see",
+                652
+            ],
+            [
+                "time",
+                632
+            ],
+            [
+                "hair",
+                631
+            ],
+            [
+                "go",
+                629
             ],
             [
                 "it\u201fs",
                 625
             ],
             [
-                "thought",
-                610
+                "around",
+                616
             ],
             [
                 "smile",
                 609
             ],
             [
-                "bed",
-                600
+                "look",
+                588
             ],
             [
-                "ask",
-                575
+                "take",
+                571
             ],
             [
-                "let",
-                563
+                "good",
+                571
             ],
             [
-                "could",
-                553
+                "voice",
+                557
+            ],
+            [
+                "mouth",
+                555
+            ],
+            [
+                "get",
+                551
+            ],
+            [
+                "steele",
+                548
+            ],
+            [
+                "room",
+                548
             ],
             [
                 "feel",
                 537
             ],
             [
-                "make",
-                536
+                "need",
+                516
             ],
             [
-                "tell",
-                518
+                "still",
+                510
+            ],
+            [
+                "would",
+                509
             ],
             [
                 "looks",
                 501
             ],
             [
+                "well",
+                498
+            ],
+            [
+                "ana",
+                485
+            ],
+            [
                 "don\u201ft",
                 482
+            ],
+            [
+                "miss",
+                467
             ],
             [
                 "us",
@@ -1405,6 +1673,10 @@
             [
                 "lips",
                 459
+            ],
+            [
+                "way",
+                454
             ],
             [
                 "door",
@@ -1417,6 +1689,14 @@
             [
                 "say",
                 434
+            ],
+            [
+                "bed",
+                433
+            ],
+            [
+                "thought",
+                432
             ],
             [
                 "never",
@@ -1447,8 +1727,16 @@
                 386
             ],
             [
+                "could",
+                385
+            ],
+            [
                 "man",
                 380
+            ],
+            [
+                "let",
+                378
             ],
             [
                 "open",
@@ -1461,6 +1749,14 @@
             [
                 "really",
                 374
+            ],
+            [
+                "make",
+                372
+            ],
+            [
+                "ask",
+                371
             ],
             [
                 "much",
@@ -1479,16 +1775,120 @@
                 359
             ],
             [
+                "tell",
+                358
+            ],
+            [
                 "away",
                 352
+            ],
+            [
+                "murmurs",
+                348
+            ],
+            [
+                "okay",
+                346
+            ],
+            [
+                "long",
+                346
+            ],
+            [
+                "whispers",
+                346
+            ],
+            [
+                "takes",
+                340
+            ],
+            [
+                "something",
+                335
+            ],
+            [
+                "fuck",
+                329
+            ],
+            [
+                "right",
+                311
+            ],
+            [
+                "mine",
+                310
+            ],
+            [
+                "first",
+                308
+            ],
+            [
+                "kisses",
+                306
+            ],
+            [
+                "behind",
+                304
+            ],
+            [
+                "thank",
+                301
+            ],
+            [
+                "car",
+                299
+            ],
+            [
+                "heart",
+                297
+            ],
+            [
+                "whisper",
+                296
+            ],
+            [
+                "hard",
+                291
+            ],
+            [
+                "taylor",
+                290
+            ],
+            [
+                "shit",
+                290
+            ],
+            [
+                "pulls",
+                290
+            ],
+            [
+                "dark",
+                289
+            ],
+            [
+                "side",
+                289
+            ],
+            [
+                "find",
+                288
+            ],
+            [
+                "front",
+                281
+            ],
+            [
+                "holy",
+                279
             ]
         ],
-        "palabrasRaras": 0.6109697865579715,
+        "palabrasRaras": 0.5977373339891785,
         "NumTokens": {
-            "NumLongitudPalabras": 616526,
-            "NumFrecuenciaPuntos": 711487,
-            "NumLongitudSentenciaMedia": 670892,
-            "NumPalabrasRaras": 295336
+            "NumLongitudPalabras": 456747,
+            "NumFrecuenciaPuntos": 527660,
+            "NumLongitudSentenciaMedia": 497219,
+            "NumPalabrasRaras": 221502
         }
     },
     {
@@ -1554,7 +1954,7 @@
         "frecuenciaComas": 13.188631,
         "frecuenciaPuntos": 15.416302,
         "longitudSentenciaMedia": 14.894978,
-        "cincuentaPalabrasFrecuentes": [
+        "palabrasFrecuentes": [
             [
                 "said",
                 7001
@@ -1854,6 +2254,106 @@
             [
                 "knew",
                 1100
+            ],
+            [
+                "heard",
+                1100
+            ],
+            [
+                "blood",
+                1094
+            ],
+            [
+                "went",
+                1088
+            ],
+            [
+                "cersei",
+                1085
+            ],
+            [
+                "left",
+                1084
+            ],
+            [
+                "around",
+                1076
+            ],
+            [
+                "much",
+                1073
+            ],
+            [
+                "...",
+                1070
+            ],
+            [
+                "called",
+                1065
+            ],
+            [
+                "enough",
+                1059
+            ],
+            [
+                "let",
+                1057
+            ],
+            [
+                "robb",
+                1041
+            ],
+            [
+                "white",
+                1030
+            ],
+            [
+                "turned",
+                1029
+            ],
+            [
+                "girl",
+                1025
+            ],
+            [
+                "stark",
+                1015
+            ],
+            [
+                "behind",
+                1010
+            ],
+            [
+                "every",
+                1005
+            ],
+            [
+                "robert",
+                1004
+            ],
+            [
+                "keep",
+                986
+            ],
+            [
+                "across",
+                983
+            ],
+            [
+                "need",
+                972
+            ],
+            [
+                "half",
+                971
+            ],
+            [
+                "knight",
+                961
+            ],
+            [
+                "found",
+                957
             ]
         ],
         "palabrasRaras": 0.4659721181232199,
@@ -1927,7 +2427,7 @@
         "frecuenciaComas": 13.593695,
         "frecuenciaPuntos": 14.610429,
         "longitudSentenciaMedia": 13.556204,
-        "cincuentaPalabrasFrecuentes": [
+        "palabrasFrecuentes": [
             [
                 "harry",
                 11208
@@ -2227,6 +2727,106 @@
             [
                 "say",
                 531
+            ],
+            [
+                "really",
+                530
+            ],
+            [
+                "next",
+                527
+            ],
+            [
+                "left",
+                526
+            ],
+            [
+                "yes",
+                522
+            ],
+            [
+                "great",
+                518
+            ],
+            [
+                "asked",
+                516
+            ],
+            [
+                "moment",
+                513
+            ],
+            [
+                "ever",
+                511
+            ],
+            [
+                "might",
+                498
+            ],
+            [
+                "front",
+                498
+            ],
+            [
+                "us",
+                494
+            ],
+            [
+                "mrs.",
+                491
+            ],
+            [
+                "went",
+                490
+            ],
+            [
+                "fred",
+                490
+            ],
+            [
+                "large",
+                488
+            ],
+            [
+                "anything",
+                484
+            ],
+            [
+                "came",
+                479
+            ],
+            [
+                "lupin",
+                477
+            ],
+            [
+                "mcgonagall",
+                476
+            ],
+            [
+                "school",
+                471
+            ],
+            [
+                "table",
+                470
+            ],
+            [
+                "felt",
+                464
+            ],
+            [
+                "feet",
+                451
+            ],
+            [
+                "uncle",
+                438
+            ],
+            [
+                "make",
+                438
             ]
         ],
         "palabrasRaras": 0.5191376347445712,
@@ -2300,7 +2900,7 @@
         "frecuenciaComas": 0.198167,
         "frecuenciaPuntos": 4.497519,
         "longitudSentenciaMedia": 43.142268,
-        "cincuentaPalabrasFrecuentes": [
+        "palabrasFrecuentes": [
             [
                 "like",
                 133
@@ -2600,6 +3200,106 @@
             [
                 "come",
                 18
+            ],
+            [
+                "god",
+                17
+            ],
+            [
+                "till",
+                17
+            ],
+            [
+                "open",
+                17
+            ],
+            [
+                "entire",
+                17
+            ],
+            [
+                "skin",
+                17
+            ],
+            [
+                "new",
+                17
+            ],
+            [
+                "father",
+                16
+            ],
+            [
+                "living",
+                16
+            ],
+            [
+                "else",
+                16
+            ],
+            [
+                "kind",
+                15
+            ],
+            [
+                "honey",
+                15
+            ],
+            [
+                "lips",
+                15
+            ],
+            [
+                "ever",
+                15
+            ],
+            [
+                "feet",
+                15
+            ],
+            [
+                "mind",
+                15
+            ],
+            [
+                "call",
+                15
+            ],
+            [
+                "looking",
+                15
+            ],
+            [
+                "man",
+                15
+            ],
+            [
+                "work",
+                15
+            ],
+            [
+                "stop",
+                15
+            ],
+            [
+                "become",
+                15
+            ],
+            [
+                "took",
+                15
+            ],
+            [
+                "wanted",
+                14
+            ],
+            [
+                "end",
+                14
+            ],
+            [
+                "full",
+                14
             ]
         ],
         "palabrasRaras": 0.7280521262002744,
@@ -2673,7 +3373,7 @@
         "frecuenciaComas": 10.788801,
         "frecuenciaPuntos": 10.03375,
         "longitudSentenciaMedia": 19.101993,
-        "cincuentaPalabrasFrecuentes": [
+        "palabrasFrecuentes": [
             [
                 "''",
                 5350
@@ -2973,6 +3673,106 @@
             [
                 "let",
                 182
+            ],
+            [
+                "mind",
+                181
+            ],
+            [
+                "love",
+                177
+            ],
+            [
+                "half",
+                176
+            ],
+            [
+                "many",
+                174
+            ],
+            [
+                "sort",
+                171
+            ],
+            [
+                "always",
+                171
+            ],
+            [
+                "without",
+                170
+            ],
+            [
+                "face",
+                169
+            ],
+            [
+                "turned",
+                169
+            ],
+            [
+                "almost",
+                167
+            ],
+            [
+                "make",
+                167
+            ],
+            [
+                "rather",
+                166
+            ],
+            [
+                "began",
+                165
+            ],
+            [
+                "another",
+                165
+            ],
+            [
+                "year",
+                164
+            ],
+            [
+                "something",
+                162
+            ],
+            [
+                "dick",
+                162
+            ],
+            [
+                "thing",
+                161
+            ],
+            [
+                "knew",
+                159
+            ],
+            [
+                "left",
+                155
+            ],
+            [
+                "might",
+                153
+            ],
+            [
+                "tell",
+                150
+            ],
+            [
+                "look",
+                147
+            ],
+            [
+                "must",
+                147
+            ],
+            [
+                "still",
+                146
             ]
         ],
         "palabrasRaras": 0.673053403995108,
@@ -3046,7 +3846,7 @@
         "frecuenciaComas": 11.468625,
         "frecuenciaPuntos": 17.911416,
         "longitudSentenciaMedia": 11.803357,
-        "cincuentaPalabrasFrecuentes": [
+        "palabrasFrecuentes": [
             [
                 "``",
                 9885
@@ -3346,6 +4146,106 @@
             [
                 "tried",
                 357
+            ],
+            [
+                "room",
+                353
+            ],
+            [
+                "sighed",
+                351
+            ],
+            [
+                "jasper",
+                350
+            ],
+            [
+                "stared",
+                349
+            ],
+            [
+                "hands",
+                346
+            ],
+            [
+                "expression",
+                339
+            ],
+            [
+                "take",
+                335
+            ],
+            [
+                "come",
+                332
+            ],
+            [
+                "hard",
+                329
+            ],
+            [
+                "yes",
+                325
+            ],
+            [
+                "wanted",
+                315
+            ],
+            [
+                "better",
+                312
+            ],
+            [
+                "whispered",
+                311
+            ],
+            [
+                "last",
+                310
+            ],
+            [
+                "behind",
+                309
+            ],
+            [
+                "left",
+                305
+            ],
+            [
+                "nothing",
+                304
+            ],
+            [
+                "told",
+                299
+            ],
+            [
+                "side",
+                298
+            ],
+            [
+                "keep",
+                297
+            ],
+            [
+                "smiled",
+                296
+            ],
+            [
+                "suddenly",
+                295
+            ],
+            [
+                "without",
+                289
+            ],
+            [
+                "say",
+                288
+            ],
+            [
+                "things",
+                288
             ]
         ],
         "palabrasRaras": 0.5972039370572378,
@@ -3419,7 +4319,7 @@
         "frecuenciaComas": 11.460512,
         "frecuenciaPuntos": 13.719423,
         "longitudSentenciaMedia": 14.758654,
-        "cincuentaPalabrasFrecuentes": [
+        "palabrasFrecuentes": [
             [
                 "'s",
                 6777
@@ -3719,6 +4619,106 @@
             [
                 "really",
                 907
+            ],
+            [
+                "mike",
+                890
+            ],
+            [
+                "richards",
+                886
+            ],
+            [
+                "seemed",
+                885
+            ],
+            [
+                "side",
+                876
+            ],
+            [
+                "well",
+                860
+            ],
+            [
+                "'d",
+                858
+            ],
+            [
+                "knew",
+                853
+            ],
+            [
+                "moment",
+                838
+            ],
+            [
+                "sure",
+                835
+            ],
+            [
+                "mind",
+                826
+            ],
+            [
+                "enough",
+                823
+            ],
+            [
+                "gone",
+                822
+            ],
+            [
+                "three",
+                820
+            ],
+            [
+                "take",
+                818
+            ],
+            [
+                "told",
+                817
+            ],
+            [
+                "room",
+                813
+            ],
+            [
+                "tell",
+                802
+            ],
+            [
+                "took",
+                797
+            ],
+            [
+                "let",
+                795
+            ],
+            [
+                "beverly",
+                787
+            ],
+            [
+                "george",
+                786
+            ],
+            [
+                "make",
+                779
+            ],
+            [
+                "people",
+                773
+            ],
+            [
+                "another",
+                765
+            ],
+            [
+                "things",
+                754
             ]
         ],
         "palabrasRaras": 0.6448940576708618,
@@ -3792,7 +4792,7 @@
         "frecuenciaComas": 11.44336,
         "frecuenciaPuntos": 10.716351,
         "longitudSentenciaMedia": 17.710826,
-        "cincuentaPalabrasFrecuentes": [
+        "palabrasFrecuentes": [
             [
                 "said",
                 3534
@@ -4092,6 +5092,106 @@
             [
                 "going",
                 397
+            ],
+            [
+                "things",
+                396
+            ],
+            [
+                "day",
+                396
+            ],
+            [
+                "never",
+                392
+            ],
+            [
+                "merry",
+                392
+            ],
+            [
+                "soon",
+                389
+            ],
+            [
+                "water",
+                389
+            ],
+            [
+                "first",
+                383
+            ],
+            [
+                "part",
+                383
+            ],
+            [
+                "side",
+                376
+            ],
+            [
+                "dwarves",
+                375
+            ],
+            [
+                "got",
+                373
+            ],
+            [
+                "stood",
+                373
+            ],
+            [
+                "let",
+                371
+            ],
+            [
+                "fell",
+                361
+            ],
+            [
+                "find",
+                360
+            ],
+            [
+                "black",
+                356
+            ],
+            [
+                "round",
+                356
+            ],
+            [
+                "right",
+                355
+            ],
+            [
+                "land",
+                350
+            ],
+            [
+                "passed",
+                344
+            ],
+            [
+                "deep",
+                343
+            ],
+            [
+                "feet",
+                341
+            ],
+            [
+                "seen",
+                338
+            ],
+            [
+                "mountains",
+                328
+            ],
+            [
+                "white",
+                323
             ]
         ],
         "palabrasRaras": 0.5690485487439803,
@@ -4130,7 +5230,7 @@
             ],
             [
                 7,
-                0.05620800000000001
+                0.056208
             ],
             [
                 8,
@@ -4154,7 +5254,7 @@
             ],
             [
                 13,
-                0.0009759999999999999
+                0.000976
             ],
             [
                 14,
@@ -4164,206 +5264,206 @@
         "frecuenciaComas": 11.274988,
         "frecuenciaPuntos": 14.975325,
         "longitudSentenciaMedia": 13.618641,
-        "cincuentaPalabrasFrecuentes": [
+        "palabrasFrecuentes": [
             [
                 "peeta",
-                1142
+                571
             ],
             [
                 "one",
-                842
+                421
             ],
             [
                 "says",
-                838
+                419
             ],
             [
                 "back",
-                648
-            ],
-            [
-                "say",
-                632
-            ],
-            [
-                "us",
-                572
-            ],
-            [
-                "know",
-                540
-            ],
-            [
-                "district",
-                462
-            ],
-            [
-                "haymitch",
-                450
-            ],
-            [
-                "get",
-                442
-            ],
-            [
-                "even",
-                428
-            ],
-            [
-                "think",
-                424
-            ],
-            [
-                "see",
-                400
-            ],
-            [
-                "like",
-                396
-            ],
-            [
-                "time",
-                388
-            ],
-            [
-                "right",
-                366
-            ],
-            [
-                "could",
-                338
-            ],
-            [
-                "go",
-                330
-            ],
-            [
-                "would",
                 324
             ],
             [
-                "rue",
-                318
+                "say",
+                316
             ],
             [
-                "still",
-                308
+                "us",
+                286
             ],
             [
-                "around",
-                308
+                "know",
+                270
             ],
             [
-                "take",
-                288
+                "district",
+                231
             ],
             [
-                "make",
-                288
+                "haymitch",
+                225
             ],
             [
-                "first",
-                278
+                "get",
+                221
             ],
             [
-                "cato",
-                256
-            ],
-            [
-                "must",
-                248
-            ],
-            [
-                "never",
-                242
-            ],
-            [
-                "capitol",
-                242
-            ],
-            [
-                "well",
-                240
-            ],
-            [
-                "good",
-                240
-            ],
-            [
-                "want",
-                240
-            ],
-            [
-                "head",
-                240
-            ],
-            [
-                "prim",
-                238
-            ],
-            [
-                "eyes",
-                234
-            ],
-            [
-                "boy",
-                234
-            ],
-            [
-                "way",
-                230
-            ],
-            [
-                "tributes",
-                228
-            ],
-            [
-                "something",
-                228
-            ],
-            [
-                "water",
-                226
-            ],
-            [
-                "away",
-                226
-            ],
-            [
-                "girl",
-                224
-            ],
-            [
-                "cinna",
-                222
-            ],
-            [
-                "going",
-                220
-            ],
-            [
-                "let",
+                "even",
                 214
             ],
             [
+                "think",
+                212
+            ],
+            [
+                "see",
+                200
+            ],
+            [
+                "like",
+                198
+            ],
+            [
+                "time",
+                194
+            ],
+            [
+                "right",
+                183
+            ],
+            [
+                "could",
+                169
+            ],
+            [
+                "go",
+                165
+            ],
+            [
+                "would",
+                162
+            ],
+            [
+                "rue",
+                159
+            ],
+            [
+                "still",
+                154
+            ],
+            [
+                "around",
+                154
+            ],
+            [
+                "take",
+                144
+            ],
+            [
+                "make",
+                144
+            ],
+            [
+                "first",
+                139
+            ],
+            [
+                "cato",
+                128
+            ],
+            [
+                "must",
+                124
+            ],
+            [
+                "never",
+                121
+            ],
+            [
+                "capitol",
+                121
+            ],
+            [
+                "well",
+                120
+            ],
+            [
+                "good",
+                120
+            ],
+            [
+                "want",
+                120
+            ],
+            [
+                "head",
+                120
+            ],
+            [
+                "prim",
+                119
+            ],
+            [
+                "eyes",
+                117
+            ],
+            [
+                "boy",
+                117
+            ],
+            [
+                "way",
+                115
+            ],
+            [
+                "tributes",
+                114
+            ],
+            [
+                "something",
+                114
+            ],
+            [
+                "water",
+                113
+            ],
+            [
+                "away",
+                113
+            ],
+            [
+                "girl",
+                112
+            ],
+            [
+                "cinna",
+                111
+            ],
+            [
+                "going",
+                110
+            ],
+            [
+                "let",
+                107
+            ],
+            [
                 "last",
-                210
+                105
             ],
             [
                 "much",
-                210
+                105
             ],
             [
                 "hear",
-                208
+                104
             ],
             [
                 "games",
-                206
+                103
             ],
             [
                 "mother",
-                206
+                103
             ],
             [
                 "thing",
@@ -4464,14 +5564,114 @@
             [
                 "food",
                 84
+            ],
+            [
+                "try",
+                84
+            ],
+            [
+                "night",
+                82
+            ],
+            [
+                "arena",
+                81
+            ],
+            [
+                "help",
+                80
+            ],
+            [
+                "tree",
+                80
+            ],
+            [
+                "feet",
+                79
+            ],
+            [
+                "since",
+                79
+            ],
+            [
+                "place",
+                79
+            ],
+            [
+                "sure",
+                79
+            ],
+            [
+                "might",
+                78
+            ],
+            [
+                "body",
+                77
+            ],
+            [
+                "ask",
+                77
+            ],
+            [
+                "keep",
+                76
+            ],
+            [
+                "katniss",
+                75
+            ],
+            [
+                "nothing",
+                74
+            ],
+            [
+                "remember",
+                74
+            ],
+            [
+                "though",
+                73
+            ],
+            [
+                "trying",
+                72
+            ],
+            [
+                "almost",
+                72
+            ],
+            [
+                "hair",
+                71
+            ],
+            [
+                "better",
+                71
+            ],
+            [
+                "fire",
+                71
+            ],
+            [
+                "left",
+                68
+            ],
+            [
+                "made",
+                67
+            ],
+            [
+                "small",
+                67
             ]
         ],
         "palabrasRaras": 0.6483613817537643,
         "NumTokens": {
-            "NumLongitudPalabras": 206980,
-            "NumFrecuenciaPuntos": 234248,
-            "NumLongitudSentenciaMedia": 222408,
-            "NumPalabrasRaras": 94360
+            "NumLongitudPalabras": 103490,
+            "NumFrecuenciaPuntos": 117124,
+            "NumLongitudSentenciaMedia": 111204,
+            "NumPalabrasRaras": 47180
         },
         "Nombre": "Collins"
     }

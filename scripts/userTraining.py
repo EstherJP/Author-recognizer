@@ -22,10 +22,10 @@ def calculateNewResult(author, data, charac, numTokens):
   return newResult;
 
 # Fusiona los dos arrays de las 50 palabras mas usadas
-def topFiftyWordsMoreUsed(authorWords, dataWords):
-  newFiftyWords = []
+def topWordsMoreUsed(authorWords, dataWords):
   # Actualizamos los contadores
-  for i in range(50):
+  numberWords = 75;
+  for i in range(numberWords):
     for authorWord in authorWords:
       if dataWords[i][0] == authorWord[0]:
         # print('palabra', dataWords[i][0], 'author', authorWord[0])
@@ -40,7 +40,7 @@ def topFiftyWordsMoreUsed(authorWords, dataWords):
 # authorBook = sys.argv[2]
 # print(pathBook, authorBook)
 
-def reTrainIA(pathBook, authorBook):
+def retrainIA(pathBook, authorBook):
   bookText = getTextFromChaps(epub2text(pathBook))
 
   # Caracterizamos el texto como en el json
@@ -54,7 +54,7 @@ def reTrainIA(pathBook, authorBook):
   data['frecuenciaComas'] = frequencies[0]
   data['frecuenciaPuntos'] = frequencies[1]
   data['longitudSentenciaMedia'] = auxSentenceLength[0]
-  data['cincuentaPalabrasFrecuentes'] = fiftyMostUsedWords(bookText)
+  data['palabrasFrecuentes'] = most75UsedWords(bookText)
   data['palabrasRaras'] = auxRareWords[0]
 
   auxTokens = {}
@@ -116,8 +116,8 @@ def reTrainIA(pathBook, authorBook):
       author['NumTokens']["NumLongitudSentenciaMedia"] += data['NumTokens']["NumLongitudSentenciaMedia"]
       author['NumTokens']["NumPalabrasRaras"] += data['NumTokens']["NumPalabrasRaras"]
 
-      # ORDENAMOS LAS CINCUENTAS PALABRAS MAS FRECUENTES
-      author['cincuentaPalabrasFrecuentes'] = topFiftyWordsMoreUsed(author['cincuentaPalabrasFrecuentes'], data['cincuentaPalabrasFrecuentes'])
+      # ORDENAMOS LAS 75 PALABRAS MAS FRECUENTES
+      author['palabrasFrecuentes'] = topWordsMoreUsed(author['palabrasFrecuentes'], data['palabrasFrecuentes'])
 
       authorExists = True;
       break

@@ -2,7 +2,7 @@
 from tkinter import *
 from tkinter import filedialog
 from searchAuthor import *
-from userTrain import *
+from userTraining import *
 from incidences import *
 from tkinter import ttk
 from tkinter import messagebox
@@ -22,7 +22,7 @@ def openBook(fileExplorer):
     showPath = filteredPath[-2] + '/' + filteredPath[-1]
     fileExplorer.configure(text=showPath) 
   
-def searchAuthor():
+def callSearchAuthor():
   if len(bookPath) > 0:
     authors = informationRetrieval(bookPath)
     authorsTitleLabel = Label(tabSearch, text="Three authors with most probability")
@@ -48,7 +48,7 @@ def callIncidences(name, email, so, incidenceText):
 
 def callUserTrain(authorName, text):
   authorBook = authorName.get("1.0", "end-1c")
-  reTrainIA(bookPath, authorBook)
+  retrainIA(bookPath, authorBook)
   text.place(x=15, y=100)
 
     
@@ -90,7 +90,7 @@ def application():
   waitLabel = Label(tabSearch, text="This could take a while...")
   waitLabel.place(x=15, y=65)
   # Una vez introducido el libro, seleccionamos buscar los autores mas posible y los mostramos
-  searchButton = Button(tabSearch, text="Search author", command=searchAuthor, bg="lavender", width=11, height=1)
+  searchButton = Button(tabSearch, text="Search author", command=callSearchAuthor, bg="lavender", width=11, height=1)
   searchButton.place(x=580, y=30)
 
   # PESTAÑA ENTRENAMIENTO

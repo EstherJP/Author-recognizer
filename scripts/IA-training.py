@@ -10,23 +10,27 @@ from textCharacterization import *
 import json
 import os
 
-# Recorremos nuestra base de datos y concatenamos los libros por autor
-separator = " "
-authors = glob("./booksTrain/*")
-booksText = []
-for author in authors:
-  books = glob(author + "/*.epub")
-  bookText = []
-  for book in books:
-    rawBook = epub.read_epub(book)
-    # authors.append(rawBook.get_metadata('DC', 'creator')[0][0])
-    bookText.append(getTextFromChaps(epub2text(book)))
-  booksText.append(separator.join(bookText))
+def getBooks():
+  # Recorremos nuestra base de datos y concatenamos los libros por autor
+  separator = " "
+  authors = glob("./booksTrain/*")
+  booksText = []
+  for author in authors:
+    books = glob(author + "/*.epub")
+    bookText = []
+    for book in books:
+      # rawBook = epub.read_epub(book)
+      # authors.append(rawBook.get_metadata('DC', 'creator')[0][0])
+      bookText.append(getTextFromChaps(epub2text(book)))
+    booksText.append(separator.join(bookText))
+
+  return booksText, authors
 
 # Función que escribe en un texto de tipo JSON las características del autor
 def dataToJSON():
   data = []
   i = 0
+  booksText, authors = getBooks()
   # Creamos el hash con los datos para cada autor
   for authorCorpus in booksText:
     aux = {}
@@ -41,7 +45,7 @@ def dataToJSON():
     aux["frecuenciaComas"] = frequencies[0]
     aux["frecuenciaPuntos"] = frequencies[1]
     aux["longitudSentenciaMedia"] = auxSentenceLength[0]
-    aux["cincuentaPalabrasFrecuentes"] = fiftyMostUsedWords(authorCorpus)
+    aux["palabrasFrecuentes"] = most75UsedWords(authorCorpus)
     aux["palabrasRaras"] = auxRareWords[0]
 
     auxTokens = {}

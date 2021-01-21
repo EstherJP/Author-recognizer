@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 # Fichero que contiene funciones básicas
 
 # Función que nos permite eliminar un elemento de la lista
-def remove_values_from_list(the_list, val):
+def removeValuesFromList(the_list, val):
    return [value for value in the_list if value != val]
 
 # Conjunto de función que nos permiten pasar de epub a texto manejable en python
