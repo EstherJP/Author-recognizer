@@ -4,7 +4,6 @@ import string
 from basicFunctions import *
 from collections import Counter
 
-############ Ver si podemos generalizar la tokenizacion
 ################3 ¿Por que estan globales?
 stopWords = [] # Array que contendrá las palabras vacías del inglés
 quotes = ["’", '“', '”', "'", '"'] # Array que contiene las comillas de citas
@@ -20,7 +19,7 @@ def lengthFreqDis(text):
   tokens = nltk.word_tokenize(text)
   for item in toRemove:
     if item in tokens:
-      tokens = remove_values_from_list(tokens, item)
+      tokens = removeValuesFromList(tokens, item)
 
   # Calculamos la longitud de las palabras que se almacenará en un hash cuya clave
   # será la longitud y el valor el número de apariciones
@@ -51,7 +50,7 @@ def punctuationFreq(text):
   tokens = nltk.word_tokenize(text)
   for item in toRemove:
     if item in tokens:
-      tokens = remove_values_from_list(tokens, item)
+      tokens = removeValuesFromList(tokens, item)
   
   # Dividimos el texto en packs de mil palbras
   numberOfPack = len(text) / 1000
@@ -81,10 +80,9 @@ def sentenceLength(text):
   tokens = nltk.word_tokenize(text)
   for item in toRemove:
     if item in tokens:
-      tokens = remove_values_from_list(tokens, item)
+      tokens = removeValuesFromList(tokens, item)
 
   # Contamos el número de palabras de cada oración 
-  sentenceSizes = []
   numberOfSentences = 0
   totalLength = 0 
   for word in tokens:
@@ -94,10 +92,10 @@ def sentenceLength(text):
       totalLength += 1
       
   # Devolvemos la media del tamaño de las oraciones del texto
-  return ([round((totalLength / numberOfSentences), 6), len(tokens)])
+  return [(round((totalLength / numberOfSentences), 6)), len(tokens)]
 
 # Función que obtiene las 50 palabras más frecuentes del texto
-def fiftyMostUsedWords(text):
+def most75UsedWords(text):
   # Pasamos todas las palabras a minúscila para tratarlas por igual
   text = text.lower()
   # Procesamos el texto eliminamos los caracteres que no nos interesan incluido
@@ -111,12 +109,12 @@ def fiftyMostUsedWords(text):
   filtered_sentence = [w for w in tokens if not w in stop_words]  
   for item in toRemove:
     if item in tokens:
-      filtered_sentence = remove_values_from_list(filtered_sentence, item)
+      filtered_sentence = removeValuesFromList(filtered_sentence, item)
 
   # Almacenamos un hash como clave la palabra y como valor su frecuencia
   wordsFrequency = Counter(filtered_sentence)
   # Devolvemos un array de arrays con primer valor la palabra y segundo valor su frecuencia
-  return([wordsFrequency.most_common(50), len(tokens)])
+  return (wordsFrequency.most_common(100))
 
 def rareWords(text):
   # Pasamos todas las palabras a minúscila para tratarlas por igual
@@ -132,7 +130,7 @@ def rareWords(text):
   filtered_sentence = [w for w in tokens if not w in stop_words]  
   for item in toRemove:
     if item in tokens:
-      filtered_sentence = remove_values_from_list(filtered_sentence, item)
+      filtered_sentence = removeValuesFromList(filtered_sentence, item)
 
   wordsFrequency = Counter(filtered_sentence)
   count = 0
@@ -140,4 +138,4 @@ def rareWords(text):
     if wordsFrequency[x] <= 2:
       count += 1
 
-  return ([(count / len(wordsFrequency), len(filtered_sentence))])
+  return [(count / len(wordsFrequency)), len(filtered_sentence)]
