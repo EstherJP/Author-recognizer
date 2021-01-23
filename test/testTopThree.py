@@ -65,13 +65,41 @@ class testTopThree(unittest.TestCase):
     for i in range(TOP):
       results.append(result[i][1])
     self.assertIn("ScottFitzgerald", results)
+    
+  def testArthurConanDoyle(self):
+    result = informationRetrieval("books/ArthurConanDoyle-TheSignOfTheFour.epub")
+    results = []
+    for i in range(TOP):
+      results.append(result[i][1])
+    self.assertIn("ArthurConanDoyle", results)
 
-  # def testSuzanneCollinsTopThree(self):
-  #   for i in range(TOP)
-  #     result = informationRetrieval("books/Mockingjay_The_Hunger_Games_3_-_Suzanne_Collins.epub")
-  #     results = []
-  #     results.append(result[i][1])
-  #   self.assertIn("SuzanneCollins", results)
+  def testBramStoker(self):
+    result = informationRetrieval("books/BramStoker-TheLairOfTheWhiteWorm.epub")
+    results = []
+    for i in range(TOP):
+      results.append(result[i][1])
+    self.assertIn("BramStoker", results)
+
+  def testJaneAusten(self):
+    result = informationRetrieval("books/JaneAusten-TheLettersOfJaneAusten.epub")
+    results = []
+    for i in range(TOP):
+      results.append(result[i][1])
+    self.assertIn("JaneAusten", results)
+
+  def testJulesVerne(self):
+    result = informationRetrieval("books/JulesVerne-TwentyThousandLeaguesUnderTheSea.epub")
+    results = []
+    for i in range(TOP):
+      results.append(result[i][1])
+    self.assertIn("JulesVerne", results)
+
+  def testPatrickRothfuss(self):
+    result = informationRetrieval("books/RothfussPatrick_-_The_King_Killer_Chronicle_1_-_The_Name_of_the_Wind.epub")
+    results = []
+    for i in range(TOP):
+      results.append(result[i][1])
+    self.assertIn("PatrickRothfuss", results)
 
 if __name__ == '__main__':
   unittest.main()

@@ -38,13 +38,28 @@ class testAccuracy(unittest.TestCase):
     self.assertEqual(result, "StephenKing")
 
   def testScottFitzGerald(self):
-    result = informationRetrieval("books/The_Great_Gatsby_-_Fitzgerald_F_Scott.epub")
+    result = informationRetrieval("books/The_Great_Gatsby_-_Fitzgerald_F_Scott.epub")[0][1]
     self.assertEqual(result, "ScottFitzgerald")
 
-  # def testSuzanneCollins(self):
-  #   result = informationRetrieval("books\Mockingjay_The_Hunger_Games_3_-_Suzanne_Collins.epub")
-  #   self.assertEqual(result, "SuzanneCollins")
+  def testArthurConanDoyle(self):
+    result = informationRetrieval("books/ArthurConanDoyle-TheSignOfTheFour.epub")[0][1]
+    self.assertEqual(result, "ArthurConanDoyle")
 
+  def testBramStoker(self):
+    result = informationRetrieval("books/BramStoker-TheLairOfTheWhiteWorm.epub")[0][1]
+    self.assertEqual(result, "BramStoker")
+
+  def testJaneAusten(self):
+    result = informationRetrieval("books/JaneAusten-TheLettersOfJaneAusten.epub")[0][1]
+    self.assertEqual(result, "JaneAusten")
+
+  def testJulesVerne(self):
+    result = informationRetrieval("books/JulesVerne-TwentyThousandLeaguesUnderTheSea.epub")[0][1]
+    self.assertEqual(result, "JulesVerne")
+
+  def testPatrickRothfuss(self):
+    result = informationRetrieval("books/RothfussPatrick_-_The_King_Killer_Chronicle_1_-_The_Name_of_the_Wind.epub")[0][1]
+    self.assertEqual(result, "PatrickRothfuss")
 
 if __name__ == '__main__':
   unittest.main() 
