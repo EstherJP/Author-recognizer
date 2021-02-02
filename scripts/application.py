@@ -12,7 +12,7 @@ bookPath = ''
 # Funcion que abre el buscador de archivo para seleccionar el fichero en formato epub que desees
 def openBook(fileExplorer):
   global bookPath
-  auxPath = filedialog.askopenfilename(initialdir="C:/Users/", title="Seleccionar fichero", filetypes=(("Text Files", "*.epub"), ))
+  auxPath = filedialog.askopenfilename(initialdir="C:/Users/", title="Select file", filetypes=(("Text Files", "*.epub"), ))
   if auxPath != '':
     filteredPath = auxPath.split('/')
     showPath = filteredPath[-2] + '/' + filteredPath[-1] 
@@ -32,7 +32,7 @@ def callSearchAuthor():
     textAuthors = ""
     for i in range(3):
       textAuthors += str(i + 1) + ".- " + authors[i][1] + " "
-      textAuthors += "con un porcentaje de similitud de " + str(authors[i][0]) + "%\n"
+      textAuthors += "with a similarity percentage of" + str(authors[i][0]) + "%\n"
       
     authorsLabel = Label(tabSearch, text=textAuthors)
     authorsLabel.place(x=5, y=130)
@@ -142,7 +142,7 @@ def application():
   insertEmail.place(x=160, y=60)
 
   # Introducir el sistema operativo en donde ocurrio el problema
-  userSo = Label(tabIncidence, text="Sistema Operativo", bd=4, bg="ghost white", width=20, relief=RIDGE)
+  userSo = Label(tabIncidence, text="Operating System", bd=4, bg="ghost white", width=20, relief=RIDGE)
   userSo.place(x=15, y=90)
   insertSo = Text(tabIncidence, height=1, width=25)
   insertSo.place(x=160, y=90)
